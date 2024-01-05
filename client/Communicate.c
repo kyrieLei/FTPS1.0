@@ -33,8 +33,6 @@ long getresponse(FTP *ftp){
     int sz = 1024;
     int bytesread = 0;
     int err;
-    int kt;
-    char *buffer;
 
     int fileerror = 0;
     if(ftp->AUTHMODE && !ftp->ccc){
