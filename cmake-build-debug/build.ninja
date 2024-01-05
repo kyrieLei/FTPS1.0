@@ -1,0 +1,303 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: FTPS
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/kyrie/Desktop/FTPS1.0/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target FTPS
+
+
+#############################################
+# Order-only phony target for FTPS
+
+build cmake_object_order_depends_target_FTPS: phony || CMakeFiles/FTPS.dir
+
+build CMakeFiles/FTPS.dir/network.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/network.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/network.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir
+
+build CMakeFiles/FTPS.dir/IO.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/IO.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/IO.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir
+
+build CMakeFiles/FTPS.dir/tls.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/tls.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/tls.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir
+
+build CMakeFiles/FTPS.dir/client/protocol_client.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/protocol_client.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/protocol_client.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/Client.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/Client.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/Client.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/server/Server.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/Server.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/Server.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/client/init_client.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/init_client.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/init_client.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/Communicate.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/Communicate.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/Communicate.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/Command_get.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/Command_get.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/Command_get.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/Login.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/Login.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/Login.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/Path_operation.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/Path_operation.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/Path_operation.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/File_operation.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/File_operation.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/File_operation.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/TLS_com.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/TLS_com.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/TLS_com.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/client/Up_download.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/client/Up_download.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/client/Up_download.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/client
+
+build CMakeFiles/FTPS.dir/server/init_server.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/init_server.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/init_server.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/server/login.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/login.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/login.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/server/up_download.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/up_download.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/up_download.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/server/tls_com.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/tls_com.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/tls_com.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/server/command_deal.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/command_deal.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/command_deal.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/server/file_operation.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/file_operation.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/file_operation.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/server/communication.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/communication.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/communication.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/server/path_operation.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/server/path_operation.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/server/path_operation.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/server
+
+build CMakeFiles/FTPS.dir/Crypto/gcm_encrypto.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/Crypto/gcm_encrypto.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/Crypto/gcm_encrypto.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/Crypto
+
+build CMakeFiles/FTPS.dir/Crypto/secure_communication.c.o: C_COMPILER__FTPS_Debug /Users/kyrie/Desktop/FTPS1.0/Crypto/secure_communication.c || cmake_object_order_depends_target_FTPS
+  DEP_FILE = CMakeFiles/FTPS.dir/Crypto/secure_communication.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/kyrie/Desktop/FTPS1.0/. -I/Users/kyrie/Desktop/FTPS1.0/client -I/Users/kyrie/Desktop/FTPS1.0/server -I/usr/local/include
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  OBJECT_FILE_DIR = CMakeFiles/FTPS.dir/Crypto
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FTPS
+
+
+#############################################
+# Link the executable FTPS
+
+build FTPS: C_EXECUTABLE_LINKER__FTPS_Debug CMakeFiles/FTPS.dir/network.c.o CMakeFiles/FTPS.dir/IO.c.o CMakeFiles/FTPS.dir/tls.c.o CMakeFiles/FTPS.dir/client/protocol_client.c.o CMakeFiles/FTPS.dir/client/Client.c.o CMakeFiles/FTPS.dir/server/Server.c.o CMakeFiles/FTPS.dir/client/init_client.c.o CMakeFiles/FTPS.dir/client/Communicate.c.o CMakeFiles/FTPS.dir/client/Command_get.c.o CMakeFiles/FTPS.dir/client/Login.c.o CMakeFiles/FTPS.dir/client/Path_operation.c.o CMakeFiles/FTPS.dir/client/File_operation.c.o CMakeFiles/FTPS.dir/client/TLS_com.c.o CMakeFiles/FTPS.dir/client/Up_download.c.o CMakeFiles/FTPS.dir/server/init_server.c.o CMakeFiles/FTPS.dir/server/login.c.o CMakeFiles/FTPS.dir/server/up_download.c.o CMakeFiles/FTPS.dir/server/tls_com.c.o CMakeFiles/FTPS.dir/server/command_deal.c.o CMakeFiles/FTPS.dir/server/file_operation.c.o CMakeFiles/FTPS.dir/server/communication.c.o CMakeFiles/FTPS.dir/server/path_operation.c.o CMakeFiles/FTPS.dir/Crypto/gcm_encrypto.c.o CMakeFiles/FTPS.dir/Crypto/secure_communication.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  -lopenssl  -llibcrypto  -lopenssl  -llibcrypto
+  LINK_PATH = -L/usr/local/lib
+  OBJECT_DIR = CMakeFiles/FTPS.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = FTPS
+  TARGET_PDB = FTPS.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/kyrie/Desktop/FTPS1.0/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/kyrie/Desktop/FTPS1.0/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kyrie/Desktop/FTPS1.0 -B/Users/kyrie/Desktop/FTPS1.0/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/kyrie/Desktop/FTPS1.0/cmake-build-debug
+
+build all: phony FTPS
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/kyrie/Desktop/FTPS1.0/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/kyrie/Desktop/FTPS1.0/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
