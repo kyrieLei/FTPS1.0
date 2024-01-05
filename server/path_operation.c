@@ -68,8 +68,8 @@ int LIST(FTP *ftp){
                 continue;
             off = get_file_info(filename, buff , sizeof(buff));
             if(ftp->AUTHMODE){
-                Writen(ftp->socket_pasv_conn, buff, off);
-                //SSL_send(ftp->socket_pasv_conn, buff, additional, key, iv);
+                //Writen(ftp->socket_pasv_conn, buff, off);
+                SSL_send(ftp->socket_pasv_conn, buff, additional, key, iv);
             }else{
                 Writen(ftp->socket_pasv_conn, buff, off);
             }

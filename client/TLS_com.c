@@ -123,8 +123,11 @@ int CCC(FTP *ftp){
         printf("already cancled command channel protection!\n");
         return -1;
     }
+
     sendrequst(ftp);
+
     getresponse(ftp);
+
     showresponse(ftp);
     if(ftp->code != 200){
         printf("CCC failed!\n");

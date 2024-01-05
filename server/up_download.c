@@ -13,10 +13,9 @@ int RETR(FTP *ftp){
     char buff[BUFSIZ];
     size_t n;
 
-//    printf("%s\n",ftp->arg);
-//    if(!ftp->AUTHMODE)
+
     pasvconn(ftp);
-    //printf("%s\n",ftp->arg);
+
 
 
         FILE *f = fopen(ftp->arg, "r");

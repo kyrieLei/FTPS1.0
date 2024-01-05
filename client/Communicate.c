@@ -38,7 +38,6 @@ long getresponse(FTP *ftp){
 
     int fileerror = 0;
     if(ftp->AUTHMODE && !ftp->ccc){
-
             SSL_receive(fd, buff,additional, key, iv, CLIENT_SIDE);
             char buf[4];
             strncpy(buf, buff, 3);

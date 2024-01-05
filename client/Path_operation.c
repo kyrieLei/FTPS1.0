@@ -34,8 +34,8 @@ int LIST(FTP *ftp){
     if(ftp->code == 550)goto LISTEND;
     if(ftp->code == 150){
         if(ftp->AUTHMODE){
-            Read2F(ftp->socket_pasv_data, stdout);
-            //SSL_Read2F(ftp->socket_pasv_data, stdout, additional, key, iv,CLIENT_SIDE);
+            //Read2F(ftp->socket_pasv_data, stdout);
+            SSL_Read2F(ftp->socket_pasv_data, stdout, additional, key, iv,CLIENT_SIDE);
         }else {
             Read2F(ftp->socket_pasv_data, stdout);
         }

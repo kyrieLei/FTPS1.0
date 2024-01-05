@@ -19,10 +19,14 @@ int RETR(FTP *ftp){
     }
 
     if(ftp->AUTHMODE){
-        if(AUTH(ftp) != 0){
-            printf("RETR failed on AUTH\n");
+        if(PASV(ftp) != 0){
+            printf("RETR connect to server failed\n");
             return -1;
         }
+//        if(AUTH(ftp) != 0){
+//            printf("RETR failed on AUTH\n");
+//            return -1;
+//        }
     }else {
         if(PASV(ftp) != 0){
             printf("RETR connect to server failed\n");
