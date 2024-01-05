@@ -12,6 +12,6 @@ int init(FTP *, const char *address, uint16_t port);
 int ftp_init(FTP *, const char *address, uint16_t port);
 void loop(FTP *);
 void ftp_exit(FTP *);
-
+int sign(int);
 
 #endif //FTPS_INIT_SERVER_H

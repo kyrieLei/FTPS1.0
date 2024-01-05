@@ -116,6 +116,7 @@ void loop(FTP *ftp){
         ftp->socket_client = Accept(ftp->socket_listen,  NULL, NULL);
         rsaes_setup_process(ftp->socket_client, key, rsa_pubkey, rsa_privkey, SERVER_SIDE);
         if (-1 == ftp->socket_client) continue;
+
         fflush(stdout);
         close(ftp->socket_listen);
 

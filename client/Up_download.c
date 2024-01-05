@@ -23,10 +23,6 @@ int RETR(FTP *ftp){
             printf("RETR connect to server failed\n");
             return -1;
         }
-//        if(AUTH(ftp) != 0){
-//            printf("RETR failed on AUTH\n");
-//            return -1;
-//        }
     }else {
         if(PASV(ftp) != 0){
             printf("RETR connect to server failed\n");
@@ -81,14 +77,6 @@ int STOR(FTP *ftp){
             printf("STOR connect to server failed\n");
             return -1;
         }
-//        if(PASV(ftp) != 0){
-//            printf("STOR connect to server failed\n");
-//            return -1;
-//        }
-//        if(AUTH(ftp) != 0){
-//            printf("RETR failed on AUTH\n");
-//            return -1;
-//        }
     }else {
         if(PASV(ftp) != 0){
             printf("STOR connect to server failed\n");

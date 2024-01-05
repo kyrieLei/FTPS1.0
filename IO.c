@@ -16,23 +16,24 @@
 
 
 long Readn(int fd, void *buf, int n){
-    ssize_t nleft;
-    ssize_t nread;
-    char* ptr;
+    ssize_t bytesread;
+    size_t bytes2read;
+    char *ptr = NULL;
 
-    ptr = buf;
-    nleft = n;
-
-    while(nleft > 0) {
-        nread = read(fd, ptr, nleft);
-        if (nread == -1)
-            return -1;
-        else if (nread == 0)
+    for(bytes2read = n, ptr = buf; \
+        bytes2read > 0; \
+        ptr += bytesread, bytes2read -= bytesread){
+        if((bytesread = read(fd, ptr, bytes2read)) < 0){
+            if(EINTR == errno)
+                bytesread = 0;
+            else
+                return -1;
+        }else if(0 == bytesread)
             break;
-        nleft -= nread;
-        ptr += nread;
     }
-    return (n-nleft);
+
+
+    return bytes2read ? -1 : 0;
 }
 
 

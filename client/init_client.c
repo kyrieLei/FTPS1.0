@@ -19,6 +19,15 @@
 #define MAX_FILE_SIZE       1000
 #define MAX_CLNT            256
 
+// userDB return values
+#define USER_ALREADY_EXTSTS 32//302
+#define USER_NOT_FOUND      44//404
+#define SIGNUP_SUCCESS      23//200
+#define SIGN_FAIL           24//201
+
+#define NOT_CORRECT         9
+#define CORRECT_ID          10
+#define CORRECT_PW          11
 
 // command
 #define SUCCESS             1
@@ -83,13 +92,12 @@ void ftp_exit(FTP *ftp){
 }
 
 void loop(FTP *ftp){
-
+//    printf("导致");
     getresponse(ftp);
     showresponse(ftp);
     if(ftp->code != 200 && ftp->code != 220){
         ftp->ftp_exit(ftp);
     }
-
     while(1){
         printf("\nFTPS> ");
         char cmd[11+PATH_MAX];

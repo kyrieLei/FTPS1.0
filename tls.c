@@ -60,6 +60,7 @@ long SSL_receive(int sock, char *plaintext, unsigned char *additional, unsigned 
                 if ( strcmp(plaintext, "eof") )
                     printf("%s", plaintext);
             }
+
             break;
         default:
             break;

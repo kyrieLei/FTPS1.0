@@ -6,12 +6,12 @@
 #define FTPS_INIT_SERVER_H
 
 
+#define MAX_CLNT            256
+
+
+
 #include "protocol_server.h"
-typedef struct __PIDCHILD{
-    pid_t *node;
-    int size;
-    int maxsize;
-} PIDCHILD;
+
 
 
 int init(FTP *);
