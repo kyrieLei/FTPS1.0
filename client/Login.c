@@ -55,3 +55,14 @@ int BYE(FTP *ftp){
     ftp_exit(ftp);
     return 0;
 }
+int SIGN(FTP *ftp){
+    sendrequst(ftp);
+    getresponse(ftp);
+    showresponse(ftp);
+
+    if(ftp->code == 666){
+
+        return 0;
+    }
+    return -1;
+}

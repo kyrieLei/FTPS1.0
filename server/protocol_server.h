@@ -37,7 +37,7 @@ typedef struct __ftp{
     void (*ftp_exit)(struct __ftp *);
 } FTP;
 
-static const char *USER_PASS[2][2]={{"l","l"}, {"z","z"}};
+static char *USER_PASS[1024][2]={{"l","l"}, {"z","z"}};
 static uint16_t CMD_PORT = 9876;
 static int QueueMax = 1024;
 

@@ -33,7 +33,10 @@ int parse_cmd(FTP *ftp){
         ftp->dorequest = USER;
     }else if(!strncmp(ftp->cmd, "PASS", sizeof("PASS"))){
         ftp->dorequest = PASS;
-    }else if(!strncmp(ftp->cmd, "BYE", sizeof("BYE"))){
+    }else if(!strncmp(ftp->cmd, "SIGN", sizeof("SIGN"))){
+        ftp->dorequest = SIGN;
+    }
+    else if(!strncmp(ftp->cmd, "BYE", sizeof("BYE"))){
         ftp->dorequest = BYE;
     }else if(!strncmp(ftp->cmd, "LIST", sizeof("LIST"))){
         ftp->dorequest = LIST;

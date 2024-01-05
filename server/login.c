@@ -45,3 +45,6 @@ int BYE(FTP *ftp){
     ftp_exit(NULL);
     return 0;
 }
+int SIGN(FTP *ftp){
+
+}

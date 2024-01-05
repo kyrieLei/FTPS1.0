@@ -105,6 +105,12 @@ int getCmd(FTP *ftp, const char *s, int n){
         strncat(ftp->request, "\r\n", sizeof("\r\n"));
         ftp->dorequest = MKFILE;
     }
+    else if(!strncmp(cmd, "sign", sizeof("sign "))){
+        strncpy(ftp->request, "SIGN ", sizeof("SIGN "));
+        strncat(ftp->request, arg, j);
+        strncat(ftp->request, "\r\n", sizeof("\r\n"));
+        ftp->dorequest = SIGN;
+    }
     else if(!strncmp(cmd, "rm", sizeof("rm"))){
         strncpy(ftp->request, "RMFILE ", sizeof("RMFILE "));
         strncat(ftp->request, arg, j);

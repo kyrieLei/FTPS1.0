@@ -11,6 +11,6 @@
 int USER(FTP *);
 int PASS(FTP *);
 int BYE(FTP *);
-
+int SIGN(FTP *);
 
 #endif //FTPS_LOGIN_H
