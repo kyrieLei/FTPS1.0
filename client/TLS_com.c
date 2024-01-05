@@ -127,12 +127,12 @@ int CCC(FTP *ftp){
     sendrequst(ftp);
 
     getresponse(ftp);
-
     showresponse(ftp);
     if(ftp->code != 200){
         printf("CCC failed!\n");
         return -1;
     }else{
+        ftp->AUTHMODE=0;
         ftp->ccc = 1;
         return 0;
     }

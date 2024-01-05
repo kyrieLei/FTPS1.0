@@ -38,6 +38,11 @@ long getresponse(FTP *ftp){
 
     int fileerror = 0;
     if(ftp->AUTHMODE && !ftp->ccc){
+        if(trueblocking){
+            FD_ZERO(&rs);
+            FD_SET(fd, &rs);
+            select(fd+1, &rs, NULL, NULL, NULL);
+        }
 
             SSL_receive(fd, buff,additional, key, iv, CLIENT_SIDE);
             printf("%s \n",buff);

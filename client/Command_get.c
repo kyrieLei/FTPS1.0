@@ -22,14 +22,14 @@ int getCmd(FTP *ftp, const char *s, int n){
         cmd[i] = s[i];
         ++i;
     }
-    if(i <= 11)cmd[i] = '\0';
+    if(i < 11) cmd[i] = '\0';
     while(i < n && isspace(s[i]) && s[i] != '\n')++i;
     n -= i;
     while(j < 255 && i < min(255, n) && s[i] != '\n'){
         arg[j] = s[i];
         ++i, ++j;
     }
-    if(j <= 256)arg[j] = '\0';
+    if(j < 256)arg[j] = '\0';
 
     if(!strncmp(cmd, "user", sizeof("user"))){
         strncpy(ftp->request, "USER ", sizeof("USER "));

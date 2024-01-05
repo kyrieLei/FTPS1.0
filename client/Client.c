@@ -1,10 +1,3 @@
-/*
-    Secure FTP Project (c Yongbhin Kim)
-        - FTP application program
-        - Client
-*/
-
-
 
 #include <openssl/aes.h>
 #include <openssl/bio.h>
@@ -31,17 +24,10 @@
 
 
 
-void handle_command(FTP* ftp,int sock);
-
-void send_up_file(FTP*ftp,int sock, char* src_file);
-void recv_down_file(FTP*ftp,int sock, char *filename2);
-
-void msg_split(char* msg, char* command, char* filename1, char* filename2);
-
-
 
 int main(int argc, char* argv[]) {
     FTP ftp;
+
     init(&ftp, "127.0.0.1", 9876);
 
     BIO *rsa_pubkey = NULL;
